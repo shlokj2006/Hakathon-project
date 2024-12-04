@@ -14,9 +14,10 @@ The structure of the project is as follows:
       6) contact us.html
       7) feedback.html
       8) terms and condition .html
+      9) //wil add community if possible
 
 
-      16 pages to be made 
+      19 pages to be made 
 
  libraries used
       1) <script src="https://cdn.jsdelivr.net/npm/chart.js"></script><!--chart js library link -->

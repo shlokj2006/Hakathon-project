@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Water Management Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header class="app-header">
+      <h1>Smart Water Management Dashboard</h1>
+    </header>
+    <div class="container" style="color: #557c56">
+      <nav><!--nav = navigation-->
+        <ul>
+          <li><a href="#overview" style="color: #557c56">Home</a></li>
+          <li><a href="aboutus.html" style="color: #557c56">About us </a></li>
+          <li><a href="login.html" style="color: #557c56">login</a></li>
+          <li><a href="calc.html" style="color: #557c56">water usage calculator</a></li>
+          <li> <a href="home.html" style="color: #557c56">library</a></li>
+          <li><a href="sub.html" style="color: #557c56">Subscription</a></li>
+          <li><a href="#contact" style="color: #557c56">Contact us </a></li>
+          <li><a href="feedback.html" style="color: #557c56">Feed back </a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="content">
+      <section id="overview" class="overview">
+        <h2>Overview</h2>
+        <canvas id="overviewChart"></canvas>
+      </section>
+
+      <section class="alerts">
+        <h2>High Water Usage Alerts</h2>
+        <ul id="alertsList">
+          <!-- Alerts will be listed here -->
+        </ul>
+      </section>
+
+      <section class="tips">
+        <h2>Water Conservation Tips</h2>
+        <ul id="tipsList">
+          <!-- Tips will be listed here -->
+        </ul>
+      </section>
+
+      <section class="comparison">
+        <h2>Regional Comparison</h2>
+        <canvas id="comparisonChart"></canvas>
+      </section>
+    </main>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Smart water usage dashboard . All rights reserved.</p>
+        <details style="font-size: small">
+          <summary>Terms and conditions</summary>
+          <p>For detailed terms and condition click the link below.</p>
+          <p>
+            <a
+              href="lorem.html"
+              style="background-color: antiquewhite"
+              >for more information click here</a
+            >
+          </p>
+        </details>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script><!--chart js library link -->
+    <script src="script/scripts.js"></script>
+  </body>
+</html>

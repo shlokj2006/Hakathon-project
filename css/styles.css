@@ -1,0 +1,115 @@
+*{                      /*(* is or universal selector)*/
+  align-self: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe5cf;
+  }
+  header {
+    background-color: #FF885B;
+    color: #557c56;
+    padding: 10px 0;
+    font-style: italic;
+}
+  header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+  margin: 0;
+}
+header h2 {
+  color: rgba(161, 20, 51, 0.856);
+  font-style: italic;
+
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+  
+  .app-header {
+    background-color: #ff885b;
+    color: #ffe5cf;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+  }
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #FF885B;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+  
+  .overview, .alerts, .tips, .comparison {
+    border: 1px solid #33372c;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffe5cf;
+  }
+  
+  @media (min-width: 768px) {
+    .overview, .alerts, .tips, .comparison {
+      width: 45%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .overview, .alerts, .tips, .comparison {
+      width: 30%;
+    }
+  }
+  

@@ -1,0 +1,133 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Water Management Dashboard - Login</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.login-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    background: #007bff;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+}
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.link {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+}
+    </style>
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+    <div class="login-container">
+        <div class="logo">Logo</div>
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <div class="remember-me">
+                <input type="checkbox" id="rememberMe"> <label for="rememberMe">Remember Me</label>
+            </div>
+            <a href="index.html" class="btn btn-primary" aria-label="Login to your account"target="_blank">
+                <span class="icon" aria-hidden="true">🔑</span> Login
+            </a>
+            <p class="link" onclick="showPopup('signupPopup')">Sign Up</p>
+            <p class="link" onclick="showPopup('forgotPasswordPopup')">Forgot Password?</p>
+        </form>
+    </div>
+
+    <div class="popup" id="signupPopup">
+        <h3>Sign Up</h3>
+        <p>Sign up form goes here.</p>
+        <button onclick="closePopup('signupPopup')">Close</button>
+    </div>
+
+    <div class="popup" id="forgotPasswordPopup">
+        <h3>Forgot Password</h3>
+        <p>Reset password form goes here.</p>
+        <button onclick="closePopup('forgotPasswordPopup')">Close</button>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Add your login logic here
+            alert('Login submitted!');
+        });
+        
+        function showPopup(popupId) {
+            document.getElementById(popupId)
+        }
+    </script>
+</body>
+</html>

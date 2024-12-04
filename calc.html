@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Smart Water Usage Calculator</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.results {
+    margin-top: 20px;
+    text-align: left;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Water Usage Calculator</h1>
+        
+        <form id="waterUsageForm">
+            <div class="form-group">
+                <label for="showerTime">Shower Duration (minutes per day):</label>
+                <input type="number" id="showerTime" min="0" value="10">
+            </div>
+
+            <div class="form-group">
+                <label for="numShowers">Number of Showers per Week:</label>
+                <input type="number" id="numShowers" min="0" value="7">
+            </div>
+
+            <div class="form-group">
+                <label for="laundryLoads">Laundry Loads per Week:</label>
+                <input type="number" id="laundryLoads" min="0" value="3">
+            </div>
+
+            <div class="form-group">
+                <label for="gardenWatering">Garden Watering (liters per week):</label>
+                <input type="number" id="gardenWatering" min="0" value="100">
+            </div>
+
+            <button type="button" onclick="calculateWaterUsage()">Calculate</button>
+        </form>
+
+        <div id="results" class="results">
+            <h2>Estimated Water Usage:</h2>
+            <p id="showerUsage">Shower Usage: </p>
+            <p id="laundryUsage">Laundry Usage: </p>
+            <p id="gardenUsage">Garden Usage: </p>
+            <p id="totalUsage">Total Weekly Usage: </p>
+        </div>
+    </div>
+ <script>
+    function calculateWaterUsage() {
+    // Collect user inputs
+    const showerTime = parseInt(document.getElementById('showerTime').value);
+    const numShowers = parseInt(document.getElementById('numShowers').value);
+    const laundryLoads = parseInt(document.getElementById('laundryLoads').value);
+    const gardenWatering = parseInt(document.getElementById('gardenWatering').value);
+
+    // Average water consumption values
+    const waterPerMinuteShower = 9; // Liters per minute for shower
+    const waterPerLaundryLoad = 70; // Liters per laundry load
+
+    // Calculating water usage
+    const weeklyShowerUsage = showerTime * numShowers * waterPerMinuteShower; // Liters per week
+    const weeklyLaundryUsage = laundryLoads * waterPerLaundryLoad; // Liters per week
+    const weeklyGardenUsage = gardenWatering; // Liters per week
+
+    const totalWeeklyUsage = weeklyShowerUsage + weeklyLaundryUsage + weeklyGardenUsage;
+
+    // Display results
+    document.getElementById('showerUsage').innerText = `Shower Usage: ${weeklyShowerUsage} liters per week`;
+    document.getElementById('laundryUsage').innerText = `Laundry Usage: ${weeklyLaundryUsage} liters per week`;
+    document.getElementById('gardenUsage').innerText = `Garden Usage: ${weeklyGardenUsage} liters per week`;
+    document.getElementById('totalUsage').innerText = `Total Weekly Usage: ${totalWeeklyUsage} liters per week`;
+}
+
+ </script>
+</body>
+</html>

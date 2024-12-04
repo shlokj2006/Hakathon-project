@@ -1,0 +1,34 @@
+project structure
+The structure of the project is as follows:
+   index.html(home page)
+      1) about us.html
+      2) login.html
+      3) water usage calculator.html
+      4)library(home.html)
+         4.1) rainwater harvesting.html
+         4.2)//add another methods
+         4.3) // add another method 
+         4.4) add a page  all the sources of all the information used in library 
+
+      5) subscription.html
+      6) contact us.html
+      7) feedback.html
+      8) terms and condition .html
+
+
+      16 pages to be made 
+
+ libraries used
+      1) <script src="https://cdn.jsdelivr.net/npm/chart.js"></script><!--chart js library link -->
+      2) bootstrap   
+
+ colour pallet used
+  1) #ffe5cf
+  2) #FF885B
+  3) #557c56
+  4)  rgba(161, 20, 51, 0.856)
+  5)  #fff
+  6)  #555  
+
+
+   * add project details in readme.md 

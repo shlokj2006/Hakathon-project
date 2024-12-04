@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Settings and Permissions</title>
+    <link rel="stylesheet" href="css/setting.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Settings and Permissions</h1>
+        
+        <div class="user-profile">
+            <h2>User Profile</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your username">
+            
+            <label for="role">Role:</label>
+            <select id="role">
+                <option value="admin">Admin</option>
+                <option value="operator">Operator</option>
+                <option value="viewer">Viewer</option>
+            </select>
+        </div>
+
+        <div class="dashboard-settings">
+            <h2>Customizable Dashboard</h2>
+            <label for="dashboard">Select Dashboard Type:</label>
+            <select id="dashboard">
+                <option value="default">Default</option>
+                <option value="analytics">Analytics</option>
+                <option value="reports">Reports</option>
+            </select>
+        </div>
+
+        <div class="notification-preferences">
+            <h2>Notification Preferences</h2>
+            <label>
+                <input type="checkbox" id="emailNotifications"> Email Notifications
+            </label>
+            <label>
+                <input type="checkbox" id="smsNotifications"> SMS Notifications
+            </label>
+        </div>
+
+        <div class="language-support">
+            <h2>Multi-Language Support</h2>
+            <label for="language">Select Language:</label>
+            <select id="language">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+            </select>
+        </div>
+
+        <button id="saveButton">Save Settings</button>
+    </div>
+
+    <script src="script/setting.js"></script>
+</body>
+</html>

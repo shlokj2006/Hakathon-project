@@ -1,20 +1,23 @@
 project structure
 The structure of the project is as follows:
    index.html(home page)
-      1) about us.html
-      2) login.html
-      3) water usage calculator.html
-      4)library(home.html)
+      1) about us.html                                                                 done
+      2) login.html                                                                    done
+      3) water usage calculator.html                                                   done
+      4)library(home.html)                                                             done
          4.1) rainwater harvesting.html
          4.2)//add another methods
          4.3) // add another method 
          4.4) add a page  all the sources of all the information used in library 
 
-      5) subscription.html
-      6) contact us.html
-      7) feedback.html
-      8) terms and condition .html
-      9) //wil add community if possible
+      5) subscription.html                                                             done
+      6) devices                                                                       done
+      7) contact us                                                                    done
+      8) feedback.html                                                                 
+      9) terms and condition .html                                                     done
+         9.1) privacy policy.html   
+      10) settings/ profile                                                            done
+      n) //wil add community if possible 
 
 
       19 pages to be made 

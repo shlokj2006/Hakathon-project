@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Management</title>
+    <link rel="stylesheet" href="css/devices.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Device Management</h1>
+        
+        <div class="device-status">
+            <h2>Device Status</h2>
+            <table id="deviceTable">
+                <thead>
+                    <tr>
+                        <th>Device ID</th>
+                        <th>Type</th>
+                        <th>Status</th>
+                        <th>Health</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Device rows will be added here dynamically -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="device-management">
+            <h2>Manage Devices</h2>
+            <label for="deviceId">Device ID:</label>
+            <input type="text" id="deviceId" placeholder="Enter Device ID">
+
+            <label for="deviceType">Device Type:</label>
+            <input type="text" id="deviceType" placeholder="Enter Device Type">
+
+            <label for="deviceStatus">Device Status:</label>
+            <select id="deviceStatus">
+                <option value="online">Online</option>
+                <option value="offline">Offline</option>
+                <option value="maintenance">Maintenance</option>
+            </select>
+
+            <button id="addDeviceButton">Add Device</button>
+            <button id="updateDeviceButton">Update Device</button>
+            <button id="removeDeviceButton">Remove Device</button>
+        </div>
+
+        <div class="firmware-updates">
+            <h2>Firmware Updates</h2>
+            <label for="firmwareVersion">Firmware Version:</label>
+            <input type="text" id="firmwareVersion" placeholder="Enter Firmware Version">
+
+            <button id="updateFirmwareButton">Update Firmware</button>
+        </div>
+
+        <div class="maintenance-schedule">
+            <h2>Maintenance Schedule</h2>
+            <label for="maintenanceDate">Next Maintenance Date:</label>
+            <input type="date" id="maintenanceDate">
+
+            <button id="scheduleMaintenanceButton">Schedule Maintenance</button>
+        </div>
+    </div>
+
+    <script src="script/devices.js"></script>
+</body>
+</html>

@@ -15,10 +15,10 @@ The structure of the project is as follows:
       6) devices                                                                       done
       7) contact us                                                                    done
       8) feedback.html                                                                 done 
-      9) terms and condition .html                                                     done
-         9.1) privacy policy.html   
+      9) terms and condition .html                                                     done   
       10) settings/ profile                                                            done
-      11) donation                                                                   
+      11) donation                                                                     done
+      12) news                                                           
       n) //wil add community if possible 
 
 

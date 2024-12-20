@@ -3,10 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feed back form</title>
-    <link rel="stylesheet" href="css/feedback.css">
+    <title>Feedback - Smart Water Management Dashboard</title>
+<link rel="stylesheet" href="css/feedback.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Feedback</h1>
+        <p>We value your feedback! Please let us know your thoughts about our Smart Water Management Dashboard.</p>
+        <form id="feedbackForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="5" required></textarea>
+            </div>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
 </body>
 </html>

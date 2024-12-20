@@ -13,7 +13,7 @@ The structure of the project is as follows:
       5) subscription.html                                                             done
       6) devices                                                                       done
       7) contact us                                                                    done
-      8) feedback.html                                                                 
+      8) feedback.html                                                                 done 
       9) terms and condition .html                                                     done
          9.1) privacy policy.html   
       10) settings/ profile                                                            done
@@ -42,4 +42,4 @@ The structure of the project is as follows:
 
 
 
-   
+   -

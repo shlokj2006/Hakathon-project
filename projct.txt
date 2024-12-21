@@ -8,16 +8,18 @@ The structure of the project is as follows:
          4.1) rainwater harvesting.html
          4.2)//add another methods
          4.3) // add another method 
-         4.4) add a page  all the sources of all the information used in library 
+         4.4) add a page  all the sources of all the information used in library
+         4.5) states 
 
       5) subscription.html                                                             done
       6) devices                                                                       done
       7) contact us                                                                    done
-      8) feedback.html                                                                 
-      9) terms and condition .html                                                     done
-         9.1) privacy policy.html   
+      8) feedback.html                                                                 done 
+      9) terms and condition .html                                                     done   
       10) settings/ profile                                                            done
-      n) //wil add community if possible 
+      11) donation                                                                     done
+      12) news                                                                         done                                                     
+     
 
 
 
@@ -46,4 +48,4 @@ The structure of the project is as follows:
 
 
 
-   
+   -

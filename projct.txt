@@ -8,8 +8,8 @@ The structure of the project is as follows:
          4.1) rainwater harvesting.html
          4.2)//add another methods
          4.3) // add another method 
-         4.4) add a page  all the sources of all the information used in library
-         4.5) states 
+         4.4) add a page  all the sources of all the information used in library       done
+         4.5) states                                                                   done
 
       5) subscription.html                                                             done
       6) devices                                                                       done

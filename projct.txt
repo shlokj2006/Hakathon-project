@@ -5,9 +5,9 @@ The structure of the project is as follows:
       2) login.html                                                                    done
       3) water usage calculator.html                                                   done
       4)library(home.html)                                                             done
-         4.1) rainwater harvesting.html                                                
-         4.2)//add another methods                                                     
-         4.3) // add another method                                                    
+         4.1) rainwater harvesting.html                                                done
+         4.2) Water sensors.html                                                    
+         4.3) Fixing leackage.html                                                 
          4.4) add a page  all the sources of all the information used in library       done
          4.5) states                                                                   done
 

@@ -30,7 +30,6 @@ The structure of the project is as follows:
 
  libraries used
       1) <script src="https://cdn.jsdelivr.net/npm/chart.js"></script><!--chart js library link -->
-      2) bootstrap   
 
  colour pallet used
   1) #ffe5cf

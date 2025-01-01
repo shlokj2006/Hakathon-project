@@ -6,8 +6,13 @@ The structure of the project is as follows:
       3) water usage calculator.html                                                   done
       4)library(home.html)                                                             done
          4.1) rainwater harvesting.html                                                done
+<<<<<<< HEAD
+         4.2) Water sensors.html                                                    
+         4.3) Fixing leackage.html                                                 
+=======
          4.2) Fixing leacks and damages                                                done   
          4.3) Smart water sensor                                                       done
+>>>>>>> 3b06d49f44f5b2173576398b9e68e488e5226ac7
          4.4) add a page  all the sources of all the information used in library       done
          4.5) states                                                                   done
 
